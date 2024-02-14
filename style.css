@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 20%;
+    background-color: black;
+}
+.canvas{
+    width: 30%;
+    background-color: #242424;
+    margin-top: 110px;
+    margin-bottom: 110px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#p1{
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+#p2{
+    font-size: 15px;
+    text-align: center;
+    color: #afe00d;
+    font-weight: bold;
+}
+#p3{
+    font-size: 12px;
+    text-align: center;
+}
+button{
+    border: none;
+    background-color: rgb(71, 69, 69);
+    height: 40px;
+    width: 60%;
+    border-radius: 15px;
+    transition: 1s ease;
+}
+#button1,#button2,#button3,#button4,#button5{
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #afe00d;
+}
+
+@media only screen and (max-width: 800px) {
+    .canvas{
+        width: 60%;
+    }
+    #p1{
+        font-size: 20px;
+    }
+    #p2{
+        font-size: 10px;
+    }
+    #p3{
+        font-size: 8px; 
+    }
+    button{
+        height: 40px;
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .canvas{
+        width: 100%;
+    }
+}
